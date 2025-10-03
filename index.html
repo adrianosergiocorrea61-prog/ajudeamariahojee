@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ajude a Maria na luta contra o câncer</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #fdfdfd; color: #333; margin: 0; padding: 0; }
+    header { background: #d62828; color: white; padding: 20px; text-align: center; }
+    main { padding: 30px; max-width: 700px; margin: auto; }
+    h1 { font-size: 28px; margin-bottom: 10px; }
+    .meta { background: #ffe6e6; padding: 15px; border-radius: 10px; margin: 20px 0; text-align: center; font-size: 18px; }
+    .pix-box { background: #f0f0f0; padding: 20px; border-radius: 10px; margin: 20px 0; text-align: center; }
+    .pix-key { font-weight: bold; font-size: 18px; color: #d62828; }
+    button.copy-btn { margin-top: 10px; background: #d62828; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; }
+    footer { text-align: center; padding: 20px; font-size: 14px; color: #888; }
+  </style>
+</head>
+<body>
+<header><h1>Ajude a Maria na luta contra o câncer 🙏💗</h1></header>
+<main>
+  <p>Maria está enfrentando uma das maiores batalhas da sua vida: o câncer.</p>
+  <p>Ela é uma mulher forte, cheia de vida, mas que neste momento precisa de ajuda.</p>
+  <p>O tratamento é longo, doloroso e caro. São muitos custos com exames, medicamentos, idas frequentes ao hospital, alimentação especial e transporte.</p>
+  <p>Por isso, criamos esta vaquinha para arrecadar doações e garantir que Maria tenha o apoio necessário para continuar lutando com dignidade e esperança.</p>
+  <p><strong>Qualquer valor faz a diferença.</strong> Sua ajuda pode salvar uma vida. 🙌</p>
+  <div class="meta">🎯 Meta da vaquinha: <strong>R$ 8.000,00</strong></div>
+  <div class="pix-box">
+    <p>💳 <strong>Chave PIX para doações:</strong></p>
+    <p class="pix-key" id="pixKey">mariaaeduarda0771@gmail.com</p>
+    <button class="copy-btn" onclick="copyPix()">📋 Copiar chave PIX</button>
+    <p style="margin-top:10px;">Compartilhe com amigos e familiares. 💕</p>
+  </div>
+</main>
+<footer>Feito com carinho para ajudar Maria ❤️</footer>
+<script>
+  function copyPix() {
+    const pixKey = document.getElementById('pixKey').innerText;
+    navigator.clipboard.writeText(pixKey).then(() => {
+      alert('Chave PIX copiada com sucesso!');
+    });
+  }
+</script>
+</body>
+</html>
